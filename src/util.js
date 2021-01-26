@@ -13,3 +13,9 @@ export function readFileAsync(file) {
       reader.readAsArrayBuffer(file)
   })
 }
+
+export function closest(counts, goal) {
+    return counts.reduce(function(prev, curr) {
+      return (Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev);
+    });
+  }
