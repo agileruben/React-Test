@@ -1,0 +1,55 @@
+.react-draggable {
+  z-index: 100;
+}
+
+.custom-handle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  opacity: 0.75;
+  border-radius: 4px;
+}
+
+.custom-handle-sw {
+  bottom: -4px;
+  left: -4px;
+  cursor: sw-resize;
+}
+
+.custom-handle-se {
+  bottom: 0px;
+  right: 0px;
+  cursor: se-resize;
+}
+
+.handle {
+  position: absolute;
+  z-index: 10;
+  left: -12px;
+  top: -12px;
+  padding: 5px;
+}
+
+.handle-close {
+  position: absolute;
+  z-index: 10;
+  right: -12px;
+  top: -12px;
+  padding: 5px;
+}
+
+.handle-color {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: -12px;
+  padding: 5px;
+}
+
+.handle-text-color {
+  position: absolute;
+  z-index: 10;
+  right: 40px;
+  top: -12px;
+  padding: 5px;
+}

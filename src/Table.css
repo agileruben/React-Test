@@ -1,0 +1,117 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table {
+  display: table;
+  position: relative;
+  flex-direction: column;
+}
+
+.table-cell {
+  white-space: pre;
+  overflow: hidden;
+  position: relative;
+}
+
+.table-cell .v-grip {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+.table-cell .h-grip {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.v-grip:hover {
+  cursor: col-resize;
+}
+
+.h-grip:hover {
+  cursor: row-resize;
+}
+
+.breakline {
+  position: absolute;
+  z-index: 10;
+  border: solid 2px red;
+}
+.v.breakline {
+  width: 0;
+  top: 0;
+  bottom: 0;
+  cursor: col-resize;
+}
+
+.right {
+  right: 0
+}
+
+.left {
+  left: 0
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.h.breakline {
+  height: 0;
+  left: 0;
+  right: 0;
+  cursor: row-resize;
+}
+
+.breakbox {
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.v.breakbox {
+  height: 100%;
+  width: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.h.breakbox {
+  height: 0;
+  left: 0;
+  right: 0;
+}
+
+.resize {
+  position: absolute;
+  z-index: 10;
+  border: solid 2px blue;
+}
+
+.resize.h {
+  height: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: row-resize;
+}
+
+.resize.v {
+  width: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: col-resize;
+}
